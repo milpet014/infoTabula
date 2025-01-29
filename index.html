@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>RIVIERA-INFO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div>
+            <iframe src="https://mybus.dpmz.sk/Home/TimeTableReal?busStopId=327" title="description"></iframe>
+        </div>
+
+        <div class="second-flex-container">
+            <div class="weather">
+                <script>
+                    (function (d, s, id) {
+                        if (d.getElementById(id)) {
+                            if (window.__TOMORROW__) {
+                                window.__TOMORROW__.renderWidget();
+                            }
+                            return;
+                        }
+                        const fjs = d.getElementsByTagName(s)[0];
+                        const js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+                        fjs.parentNode.insertBefore(js, fjs);
+                    })(document, 'script', 'tomorrow-sdk');
+                </script>
+
+                <div class="tomorrow" data-location-id="104602" data-language="EN" data-unit-system="METRIC"
+                    data-skin="dark" data-widget-type="upcoming" style="padding-bottom:22px;position:relative;">
+
+                    </a>
+                </div>
+            </div>
+            <div class="music">
+                <iframe src="https://open.spotify.com/embed/playlist/0AQJzjjy42KSOGKK9TbKE7?utm_source=generator&theme=0&autoplay=false" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+</body>
+
+</html>

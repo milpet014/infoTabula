@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+  }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+.flex-container > div {
+    margin: 1em;
+    width: calc(50vw - 1em);
+    height: calc(100vh - 3em);
+}
+
+.second-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+.second-flex-container > div {
+    width: calc(50vw - 1em);
+}
+
+.weather {
+    height: 25vh;
+}
+
+.music {
+    height: 100%;
+}
+
+iframe {
+    border: none;
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    border: none;
+    border-radius: 1em;
+    
+    height: 100%;
+    width: 100%;
+}
